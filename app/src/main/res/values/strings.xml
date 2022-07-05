@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">noticeboard_doubts</string>
+    <string name="signUp">sign up</string>
+    <string name="signIn">sign in</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+</resources>
