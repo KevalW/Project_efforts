@@ -4,4 +4,6 @@
     <string name="signIn">sign in</string>
     <string name="email">Email</string>
     <string name="password">Password</string>
+    <string name="createAnAccount">Create an account</string>
+    <string name="forgotPassword">Forgot password</string>
 </resources>
