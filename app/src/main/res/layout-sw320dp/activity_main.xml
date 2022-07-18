@@ -19,7 +19,7 @@
         android:ems="10"
         android:hint="@string/email"
         android:importantForAutofill="no"
-        android:inputType="textEmailAddress"
+        android:inputType="textPersonName"
         android:minHeight="48dp"
         android:padding="2dp"
         android:textColor="@color/black"
@@ -35,7 +35,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         android:height="50dp"
-        android:background="@drawable/edt_text_border"
+        android:background="@drawable/boder_for_etdtext"
         android:drawableStart="@drawable/ic_baseline_info_24"
         android:drawablePadding="20dp"
         android:ems="10"
@@ -99,14 +99,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.2" />
+        app:layout_constraintGuide_percent="0.1" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.8" />
+        app:layout_constraintGuide_percent="0.9" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline4"

@@ -2,8 +2,13 @@
     <string name="app_name">Techno-Info</string>
     <string name="signUp">sign up</string>
     <string name="signIn">sign in</string>
-    <string name="email">Email</string>
+    <string name="email">E-mail</string>
     <string name="password">Password</string>
     <string name="createAnAccount">Create an account</string>
     <string name="forgotPassword">Forgot password</string>
+    <string name="fname">First Name</string>
+    <string name="lname">Last Name</string>
+    <string name="bdate">B-date</string>
+    <string name="mobileNumber">Mobile Number</string>
+    <string name="cpassword">Confirm Password</string>
 </resources>

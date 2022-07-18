@@ -19,7 +19,7 @@
         android:ems="10"
         android:hint="@string/email"
         android:importantForAutofill="no"
-        android:inputType="textEmailAddress"
+        android:inputType="textPersonName"
         android:minHeight="48dp"
         android:padding="2dp"
         android:textColor="@color/black"
@@ -45,7 +45,7 @@
         android:minHeight="48dp"
         android:padding="2dp"
         android:textColor="@color/black"
-        android:textColorHint="@color/grey"
+        android:textColorHint="#78909C"
         app:layout_constraintEnd_toEndOf="@+id/guideline3"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
         app:layout_constraintTop_toBottomOf="@+id/edtMail" />

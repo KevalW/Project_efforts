@@ -8,6 +8,7 @@ import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
 
+
     private lateinit var signupTxt: TextView
     private lateinit var forgotTxt: TextView
 
