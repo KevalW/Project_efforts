@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "81995514889",
+    "project_id": "notice-board-c9539",
+    "storage_bucket": "notice-board-c9539.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:81995514889:android:04eeee0912d23727b864d8",
+        "android_client_info": {
+          "package_name": "com.example.noticeboard_doubts"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "81995514889-a7ltbff5mi8ndd6ap28lnntm5qa56fqc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCL_v4hfft3N5bH5q3RANp-IkWGI620PCE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "81995514889-a7ltbff5mi8ndd6ap28lnntm5qa56fqc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
