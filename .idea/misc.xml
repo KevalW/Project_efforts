@@ -4,7 +4,10 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Personal/project/Project_efforts/app/src/main/res/layout-sw320dp/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/Personal/project/Project_efforts/app/src/main/res/layout-sw480dp/activity_main.xml" value="0.190625" />
+        <entry key="..\:/Personal/project/Project_efforts/app/src/main/res/layout/activity_chat_section.xml" value="0.2" />
         <entry key="..\:/Personal/project/Project_efforts/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Personal/project/Project_efforts/app/src/main/res/layout/activity_sample.xml" value="0.2" />
         <entry key="..\:/Personal/project/Project_efforts/app/src/main/res/layout/activity_sigup_page.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/keval/OneDrive/Desktop/keval documents/project/Project_efforts/app/src/main/res/drawable/boder_for_etdtext.xml" value="0.225" />
         <entry key="..\:/Users/keval/OneDrive/Desktop/keval documents/project/Project_efforts/app/src/main/res/drawable/btn_shade.xml" value="0.2265" />

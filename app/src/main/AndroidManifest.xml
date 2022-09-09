@@ -14,6 +14,9 @@
         android:theme="@style/Theme.Noticeboard_doubts"
         tools:targetApi="31">
         <activity
+            android:name=".sample"
+            android:exported="false" />
+        <activity
             android:name=".ChatSection"
             android:exported="false" />
         <activity

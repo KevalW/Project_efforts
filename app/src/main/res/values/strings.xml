@@ -11,4 +11,5 @@
     <string name="bdate">B-date</string>
     <string name="mobileNumber">Mobile Number</string>
     <string name="cpassword">Confirm Password</string>
+    <string name="button">Button</string>
 </resources>

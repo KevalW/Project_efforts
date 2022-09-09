@@ -1,12 +1,12 @@
 package com.example.noticeboard_doubts
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
 
 class MainActivity : AppCompatActivity() {
@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
         signupTxt = findViewById(R.id.signUp)
         forgotTxt = findViewById(R.id.frgtpassword)
         emailBox = findViewById(R.id.edtMail)
-        passwordBox = findViewById(R.id.edtpass)
+        passwordBox = findViewById(R.id.edtpassword)
         btnSignIn = findViewById(R.id.signIn)
 
         mAuth = FirebaseAuth.getInstance()
@@ -45,7 +45,7 @@ class MainActivity : AppCompatActivity() {
             val email = emailBox.text.toString()
             val password = passwordBox.text.toString()
 
-            login(email,password);
+            login(email,password)
         }
     }
 
@@ -53,14 +53,12 @@ class MainActivity : AppCompatActivity() {
         mAuth.signInWithEmailAndPassword(email, password)
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
-                    // Sign in success, update UI with the signed-in user's information
                     val intent = Intent(this@MainActivity, ChatSection::class.java)
                     startActivity(intent)
-
                 } else {
-                    // If sign in fails, display a message to the user.
-                    Toast.makeText(this, "User doesn't exist", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this@MainActivity, "user invalid", Toast.LENGTH_SHORT).show()
                 }
             }
+
     }
 }
