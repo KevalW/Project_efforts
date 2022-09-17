@@ -83,7 +83,7 @@
         app:layout_constraintTop_toTopOf="@+id/guideline11" />
 
     <EditText
-        android:id="@+id/fName2"
+        android:id="@+id/bdate"
         android:layout_width="0dp"
         android:layout_height="48dp"
         android:layout_marginTop="22dp"
@@ -117,7 +117,7 @@
         app:layout_constraintEnd_toStartOf="@+id/guideline8"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/guideline7"
-        app:layout_constraintTop_toBottomOf="@+id/fName2" />
+        app:layout_constraintTop_toBottomOf="@+id/bdate" />
 
     <EditText
         android:id="@+id/sEmail"
@@ -129,7 +129,7 @@
         android:hint="@string/email"
         android:textColor="@color/black"
         android:importantForAutofill="no"
-        android:inputType="text"
+        android:inputType="textEmailAddress"
         android:padding="10dp"
         android:textColorHint="@color/grey"
         app:layout_constraintEnd_toStartOf="@+id/guideline8"
@@ -146,7 +146,7 @@
         android:ems="10"
         android:hint="@string/password"
         android:importantForAutofill="no"
-        android:inputType="text"
+        android:inputType="textPassword"
         android:padding="10dp"
         android:textColor="@color/black"
         android:textColorHint="@color/grey"
