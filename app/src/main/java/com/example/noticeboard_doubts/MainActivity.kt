@@ -7,6 +7,7 @@ import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.google.errorprone.annotations.Var
 import com.google.firebase.auth.FirebaseAuth
 
 class MainActivity : AppCompatActivity() {
@@ -32,6 +33,13 @@ class MainActivity : AppCompatActivity() {
 
         mAuth = FirebaseAuth.getInstance()
 
+        btnSignIn.setOnClickListener{
+            val email = emailBox.text.toString()
+            val password = passwordBox.text.toString()
+
+            login(email,password)
+        }
+
         signupTxt.setOnClickListener{
             val intent = Intent(this,SignupPage::class.java)
             startActivity(intent)
@@ -41,24 +49,18 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this@MainActivity,"will update soon", Toast.LENGTH_SHORT).show()
         }
 
-        btnSignIn.setOnClickListener{
-            val email = emailBox.text.toString()
-            val password = passwordBox.text.toString()
 
-            login(email,password)
-        }
     }
 
-    private fun login(email: String, password: String) {
+    private fun login(email: String, password: String ) {
         mAuth.signInWithEmailAndPassword(email, password)
             .addOnCompleteListener(this) { task ->
-                if (task.isSuccessful) {
+                if (task.isSuccessful and task.isComplete) {
                     val intent = Intent(this@MainActivity, ChatSection::class.java)
                     startActivity(intent)
-                } else {
+                }else {
                     Toast.makeText(this@MainActivity, "user invalid", Toast.LENGTH_SHORT).show()
                 }
             }
-
     }
 }
