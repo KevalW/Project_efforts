@@ -25,9 +25,9 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         signupTxt = findViewById(R.id.signUp)
-        forgotTxt = findViewById(R.id.frgtpassword)
-        emailBox = findViewById(R.id.edtMail)
-        passwordBox = findViewById(R.id.edtpassword)
+        forgotTxt = findViewById(R.id.FrgtPass)
+        emailBox = findViewById(R.id.mainIpEmail)
+        passwordBox = findViewById(R.id.edPass)
         btnSignIn = findViewById(R.id.signIn)
 
         mAuth = FirebaseAuth.getInstance()
