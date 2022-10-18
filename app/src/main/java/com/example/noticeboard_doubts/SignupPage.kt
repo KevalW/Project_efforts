@@ -1,18 +1,19 @@
 package com.example.noticeboard_doubts
 
-import android.app.Activity
+
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
-import com.example.noticeboard_doubts.databinding.ActivityMainBinding
+import com.google.firebase.auth.ActionCodeSettings
+
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.ktx.actionCodeSettings
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
-import com.google.firebase.database.ktx.database
-import com.google.firebase.ktx.Firebase
+
 
 class SignupPage : AppCompatActivity() {
 
@@ -20,6 +21,7 @@ class SignupPage : AppCompatActivity() {
     private lateinit var lastName: EditText
     private lateinit var emailBox: EditText
     private lateinit var passwordBox: EditText
+    private lateinit var confirmPasswordBox : EditText
     private lateinit var btnSignUp: Button
 
     private lateinit var mAuth: FirebaseAuth
@@ -34,6 +36,7 @@ class SignupPage : AppCompatActivity() {
         lastName = findViewById(R.id.lName)
         emailBox = findViewById(R.id.sEmail)
         passwordBox = findViewById(R.id.sPassword)
+        confirmPasswordBox = findViewById(R.id.sConfirmPassword)
         btnSignUp = findViewById(R.id.signupin)
 
         mAuth = FirebaseAuth.getInstance()
@@ -47,9 +50,27 @@ class SignupPage : AppCompatActivity() {
             val lastName = lastName.text.toString()
             val email = emailBox.text.toString()
             val password = passwordBox.text.toString()
+            val condfirmPassword = confirmPasswordBox.text.toString()
+
+            if (firstName.isNullOrEmpty()){
+                error("Please Enter the name")
+            }
+            if (lastName.isNullOrEmpty()){
+                error("Please Enter the last name")
+            }
+            if (email.isNullOrEmpty()){
+                error("Please Enter the email")
+            }
+            if (password.isNullOrEmpty()){
+                error("Please Enter the password")
+            }
+            if (condfirmPassword.isNullOrEmpty()){
+                error("Please Enter the confirm password")
+            }
 
             newUserInfo()
             signUp(email,password)
+
         }
     }
 

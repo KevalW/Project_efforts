@@ -186,6 +186,4 @@
         app:layout_constraintEnd_toStartOf="@+id/signupGLV2" />
 
 
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>
